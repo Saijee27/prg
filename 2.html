@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dem{
+            width: 100%;
+            height: 100vh;
+            background-image: url("logo1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+     .de ul li{
+        margin: 10px;
+        display:inline-block;
+        color:white;
+        cursor: pointer;
+        position: relative;
+     }
+     .de ul li::after{
+        content:'';
+        height:2px;
+        width:0;
+        background: rgb(192, 255, 216);
+        position: absolute;
+        left:0;
+        bottom:-5px;
+        transition:0.5s;
+     }
+     .de ul li:hover::after{
+        width:100%;
+     }
+     .de
+          {
+            background-color: rgba(14, 13, 13, 0.555);
+            text-align: center;
+          }
+          .de ul
+          {
+            display: inline-flex;
+            list-style: none;
+            color: aliceblue;
+          }
+
+          .de ul li
+          {
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+          }
+     .devil{
+        margin: 150px 0px 0px 0px;
+     }
+     .devil2
+     {
+        border: solid 5px;
+        border-color: aqua;
+        padding:25px;
+        width:200px; 
+        height:250px;
+        position:absolute;
+        top:200px;
+        left:850px;
+         
+    }
+    .devil button{
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    width:250px;
+}
+ .devil button:hover{
+    color:greenyellow;
+}
+
+
+    </style>
+</head>
+<body class="dem">
+    <div class="de">
+        <ul>
+            <li><b>Home</b></li>
+            <li><b>About Us</b></li>
+            <li><b>service</b></li>
+            <a href="2.html"><li>Logout</li></a>
+        </ul>
+    </div>
+    <div class="devil">
+     <center><button style="color: rgb(255, 0, 221);" onclick="fun()">STUDENT LOGIN</button></center><br><br>
+    <center><button style="color: blueviolet;">FACULTY LOGIN</button></center><br><br>
+    <center><h2 style="color: aqua;">OR</h2></center>
+    <a href="1.html"><center><button type="submit">sign up</button></center></a>
+    </div>
+    <script>
+        function fun()
+        {
+        location.replace("3.html");
+        }
+    </script>
+ </body>
+</html>

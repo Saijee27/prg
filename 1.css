@@ -1,0 +1,19 @@
+.div1
+{
+    background-image: url("edu.webp");
+    background-size: cover;
+    background-position: center;
+}
+.div1 h2{
+    margin: 10px,0px,0px,0px;
+}
+.div1 input{
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    width:250px;
+    height: 30px;
+}
+.div1 input:hover{
+  color:rgb(208, 192, 255);
+}
